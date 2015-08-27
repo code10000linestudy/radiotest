@@ -27,16 +27,18 @@ namespace RadioDb.Repository
 
         public SurveyQuetionRepository()
         {
-            string key =
-                ConfigurationManager.ConnectionStrings["AzuteTableSurveyMVC.Properties.Settings.StorageConnectionString"].ToString();
-            storageAccount = CloudStorageAccount.Parse(key);
+            // github에 올리기 위해 코드를 임시로 변경
+            // key값도 삭제함
+            //string key =
+            //    ConfigurationManager.ConnectionStrings["AzuteTableSurveyMVC.Properties.Settings.StorageConnectionString"].ToString();
+            //storageAccount = CloudStorageAccount.Parse(key);
 
-            // Create the table client.
-            tableClient = storageAccount.CreateCloudTableClient();
+            //// Create the table client.
+            //tableClient = storageAccount.CreateCloudTableClient();
 
-            // Create the table if it doesn't exist.
-            table = tableClient.GetTableReference(SurveyQuestion.TableName);
-            table.CreateIfNotExists();
+            //// Create the table if it doesn't exist.
+            //table = tableClient.GetTableReference(SurveyQuestion.TableName);
+            //table.CreateIfNotExists();
         }
 
         public Task<IEnumerable<SurveyQuestion>> Read(long readKey)
