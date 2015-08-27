@@ -176,9 +176,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Common\facebook-share.png" />
     <Content Include="Images\Main\main-light off.png" />
     <Content Include="Images\Main\main-light on.png" />
     <Content Include="Images\Main\oen.png" />
+    <Content Include="Images\Result\result-demo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\testfield\fonts\material.eot" />
