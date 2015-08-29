@@ -153,8 +153,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\droplist\vallenato.css" />
     <Content Include="Content\index.css" />
     <Content Include="Content\labelauty\images\input-checked.png" />
@@ -175,10 +173,13 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Images\Main\main-light off.png" />
     <Content Include="Images\Main\main-light on.png" />
     <Content Include="Images\Main\oen.png" />
+    <Content Include="Images\Main\on air copy.png" />
+    <Content Include="Images\Main\사연보내기버튼.png" />
+    <Content Include="Images\Main\설문지 제목.png" />
+    <Content Include="Images\Main\접기111.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\testfield\fonts\material.eot" />

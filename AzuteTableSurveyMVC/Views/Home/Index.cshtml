@@ -8,22 +8,30 @@
     ViewBag.Title = "Home Page";
 }
 
-
+<!-- main-page 부분입니다. 해당 페이지의 css는 index.css에 저장되어있습니다. -->
 <header></header>
 
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-
-                <h2> </h2>
-            </div>
+<!-- on-air 부터 접기 슬라이드바 까지 부분-->
+<div align="center">
+    <div class="onair">
+        <img src="~/Images/Main/on air copy.png" />
+    </div>
+    <div class="onair_folder">
+        <!-- 접히는 부분-->
+        <div class="onair">
+            <img src="~/Images/Main/설문지 제목.png" />
+        </div>
+        <div class="textarea">
+            <textarea rows="20" cols="100" style="background-color:gray"></textarea>
+        </div>
+        <div class="sendbutton">
+            <img src="~/Images/Main/사연보내기버튼.png" />
         </div>
     </div>
-    <div class="hi">
-        <img src="~/N_Img/oen.png" />
-    </div>
-</section>
+    <img id="folderimg" src="~/Images/Main/접기111.png" />
+</div>
+
+<!-- 게이지바 부분 -->
 <div id="accordion-container">
     <h2 class="accordion-header">Section 1</h2>
     <div class="accordion-content">
@@ -34,13 +42,13 @@
     </div>
 </div>
 
-
-<div class="col-md-12">
-    <img src="">
-</div>
-
-
 <script>
+    //onair 아랫부분을 접고 펴는 부분 입니다.
+    $(".onair_folder").hide();
+    $("#folderimg").click(function () {
+        $(".onair_folder").slideToggle();
+    });
+    //좌측 슬라이드바를 숨기고 나타나게 하는 부분입니다.
     $(document).ready(function () {
         $(".accordion-content").hide();
         $(".accordion-header").click(openAccordion);
@@ -52,18 +60,16 @@
     function closeAccordion() {
         $(".accordion-content").hide("fast");
     }
+    //메인화면의 이미지를 변경하는 부분입니다.
     function change_off() {
         $("header").css("background-image", "url('../Images/Main/main-light off.png')");
     }
     function change_on() {
         $("header").css("background-image", "url('../Images/Main/main-light on.png')");
     }
-    function main_chage() {
-        for (var i = 0; i < 5; i++) {
-            setTimeout('change_off()', 2000);
-            setTimeout('change_on()', 2000);
-        }
-    }
+
+    //off 함수와on함수를 차례대로 호출하는 부분입니다.
+    //for문이 작동하지않아 임시로 만들었습니다.
     setTimeout('change_off()', 1000);
     setTimeout('change_on()', 1500);
     setTimeout('change_off()', 2000);

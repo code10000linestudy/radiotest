@@ -1,51 +1,24 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-
+    <title>열정페이</title>
+    <!--우측 슬라이드바 css입니다.-->
     <link href="~/Content/slidecss/demo.css" rel="stylesheet" />
     <link href="~/Content/slidecss/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/slidecss/normalize.css" rel="stylesheet" />
-    <link href="~/Content/slidecss/menu_sideslide.css" rel="stylesheet"/>
+    <link href="~/Content/slidecss/menu_sideslide.css" rel="stylesheet" />
+    <!--index-page css입니다.-->
     <link href="~/Content/index.css" rel="stylesheet" />
+    <!-- 게이지바 css입니다.-->
     <link href="~/Content/droplist/vallenato.css" rel="stylesheet" />
+    <!--jquery사용을 위한 js파일입니다.-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-@*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("SurveyQuetions", "SurveyQuetions", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>*@
+    <!-- 우측 슬라이드바 부분입니다. Jquery부분은 index.cshtml에 있습니다.-->
     <div class="container">
         <div class="menu-wrap">
             <nav class="menu">
@@ -65,7 +38,7 @@
             @RenderBody()
         </div>
     </div>
-
+    <!-- 우측 슬라이드바에 대한 js파일입니다.-->
     <script src="~/Scripts/Slide/main.js"></script>
     <script src="~/Scripts/Slide/classie.js"></script>
 </body>

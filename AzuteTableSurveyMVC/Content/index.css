@@ -1,12 +1,7 @@
 ﻿body {
     width: 100%;
-    
     height: 100%;
-    background-color:black;
-    
 }
-
-
 header {
     position: relative;
     width: 100%;
@@ -17,19 +12,36 @@ header {
     background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
-    
     -o-background-size: 100% 100%;
 }
 
+.onair{
+    padding-top:4em;
+    padding-bottom:2em;
+}
 
+.textarea{
+    padding-top:2em;
+    padding-bottom:2em;
+    
+}
+.surveytitle{
+    text-align:center;
+    font-size:40px;
+    color:white;
+    
+}
+
+.sendbutton
+{
+    padding-left:45em;
+    padding-bottom:4em; 
+}
 @media all and (max-device-width:600px){
 
     header{
         background-image : url('../N_Img/oen.png');
-
-    }
-
-}
+}}
 
 @media all and (max-width:1200px){
     header{
@@ -38,6 +50,4 @@ header {
     -moz-background-size: cover;
     
     -o-background-size: cover;
-    }
-
-}
+    }}
