@@ -19,67 +19,84 @@
     <div class="onair_folder">
         <!-- 접히는 부분-->
         <div class="onair">
-            <img src="~/Images/Main/설문지 제목.png" />
+            <img src="~/Images/Main/surveysubject.png" />
         </div>
         <div class="textarea">
             <textarea rows="20" cols="100" style="background-color:gray"></textarea>
         </div>
         <div class="sendbutton">
-            <img src="~/Images/Main/사연보내기버튼.png" />
+            <img src="~/Images/Main/storysendbutton.png" />
         </div>
     </div>
-    <img id="folderimg" src="~/Images/Main/접기111.png" />
+    <img id="folderimg" src="~/Images/Main/downdraft.jpg" />
+</div>
+<div align="center">
+    <div class="onair">
+        <img src="~/Images/Main/on air copy.png" />
+    </div>
+    <div class="onair">
+        <img src="~/Images/Main/surveysubject.png" />
+    </div>
 </div>
 
 <!-- 게이지바 부분 -->
-<div id="accordion-container">
-    <h2 class="accordion-header">Section 1</h2>
-    <div class="accordion-content">
-        <p>Section 1 Content</p>
-        <p> test test test</p>
-        <p>가나다라마바사 </p>
-        <div class="close">이거누르면닫힘</div>
+<div class="meter">
+    <span style="width:90%"></span>
+    <p></p>
+ </div>
+    
+    <div id="accordion-container">
+        <h2 class="accordion-header">Section 1</h2>
+        <div class="accordion-content">
+            <p>Section 1 Content</p>
+            <p> test test test</p>
+            <p>가나다라마바사 </p>
+            <div class="close">이거누르면닫힘</div>
+        </div>
     </div>
-</div>
 
-<script>
-    //onair 아랫부분을 접고 펴는 부분 입니다.
-    $(".onair_folder").hide();
-    $("#folderimg").click(function () {
-        $(".onair_folder").slideToggle();
-    });
-    //좌측 슬라이드바를 숨기고 나타나게 하는 부분입니다.
-    $(document).ready(function () {
-        $(".accordion-content").hide();
-        $(".accordion-header").click(openAccordion);
-        $(".close").click(closeAccordion);
-    });
-    function openAccordion() {
-        $(".accordion-content").show("fast");
-    }
-    function closeAccordion() {
-        $(".accordion-content").hide("fast");
-    }
-    //메인화면의 이미지를 변경하는 부분입니다.
-    function change_off() {
-        $("header").css("background-image", "url('../Images/Main/main-light off.png')");
-    }
-    function change_on() {
-        $("header").css("background-image", "url('../Images/Main/main-light on.png')");
-    }
+    <script>
+       //onair 아랫부분을 접고 펴는 부분 입니다.
+        $(".onair_folder").hide();
+        $("#folderimg").click(function () {
+            $(".onair_folder").slideToggle();
+        });
+        //좌측 슬라이드바를 숨기고 나타나게 하는 부분입니다.
+        $(document).ready(function () {
+            $(".accordion-content").hide();
+            $(".accordion-header").click(openAccordion);
+            $(".close").click(closeAccordion);
 
-    //off 함수와on함수를 차례대로 호출하는 부분입니다.
-    //for문이 작동하지않아 임시로 만들었습니다.
-    setTimeout('change_off()', 1000);
-    setTimeout('change_on()', 1500);
-    setTimeout('change_off()', 2000);
-    setTimeout('change_on()', 2500);
-    setTimeout('change_off()', 3000);
-    setTimeout('change_on()', 3500);
-    setTimeout('change_off()', 4000);
-    setTimeout('change_on()', 4250);
-    setTimeout('change_off()', 4500);
-    setTimeout('change_on()', 4750);
-    setTimeout('change_off()', 5000);
-    setTimeout('change_on()', 5250);
-</script>
+        });
+        function openAccordion() {
+            $(".accordion-content").show("fast");
+        }
+        function closeAccordion() {
+            $(".accordion-content").hide("fast");
+        }
+        //메인화면의 이미지를 변경하는 부분입니다.
+        function change_off() {
+            $("header").css("background-image", "url('../Images/Main/main-light off.png')");
+        }
+        function change_on() {
+            $("header").css("background-image", "url('../Images/Main/main-light on.png')");
+        }
+
+        //off 함수와on함수를 차례대로 호출하는 부분입니다.
+        //for문이 작동하지않아 임시로 만들었습니다.
+        setTimeout('change_off()', 1000);
+        setTimeout('change_on()', 1500);
+        setTimeout('change_off()', 2000);
+        setTimeout('change_on()', 2500);
+        setTimeout('change_off()', 3000);
+        setTimeout('change_on()', 3500);
+        setTimeout('change_off()', 4000);
+        setTimeout('change_on()', 4250);
+        setTimeout('change_off()', 4500);
+        setTimeout('change_on()', 4750);
+        setTimeout('change_off()', 5000);
+        setTimeout('change_on()', 5250);
+
+
+
+    </script>

@@ -159,6 +159,8 @@
     <Content Include="Content\labelauty\images\input-unchecked.png" />
     <Content Include="Content\labelauty\jquery-labelauty.css" />
     <Content Include="Content\labelauty\jquery-labelauty.js" />
+    <Content Include="Content\progressbar\progressbar.css" />
+    <Content Include="Content\progressbar\progressbar1.js" />
     <Content Include="Content\slidecss\demo.css" />
     <Content Include="Content\slidecss\font-awesome.min.css" />
     <Content Include="Content\slidecss\menu_sideslide.css" />
@@ -173,13 +175,13 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Main\downdraft.jpg" />
     <Content Include="Images\Main\main-light off.png" />
     <Content Include="Images\Main\main-light on.png" />
     <Content Include="Images\Main\oen.png" />
     <Content Include="Images\Main\on air copy.png" />
-    <Content Include="Images\Main\사연보내기버튼.png" />
-    <Content Include="Images\Main\설문지 제목.png" />
-    <Content Include="Images\Main\접기111.png" />
+    <Content Include="Images\Main\storysendbutton.png" />
+    <Content Include="Images\Main\surveysubject.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\testfield\fonts\material.eot" />
